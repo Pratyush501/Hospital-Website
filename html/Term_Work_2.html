@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style> 
+div {
+ align:center;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: square-to-circle 5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:red;
+    transform-origin: center, right; 	
+    transform:rotate(0deg);
+     
+
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:violet;
+    transform-origin: center right;
+    transform:rotate(45deg);
+
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:green;
+    transform-origin: center right;
+    transform:rotate(90deg);
+
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+	transform-origin: center right;
+    transform:rotate(135deg);
+
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    transform-origin: center right;
+    transform:rotate(180deg);
+
+  }
+}
+</style>
+</head>
+<body>
+ 
+<p><b>Note:</b> Creating simple animations using CSS. Example: square to circle.
+ </p>
+ 
+<div>
+
+<pre>      
+
+      Square to Circle
+</pre>
+</div>
+
+</body>
+</html>

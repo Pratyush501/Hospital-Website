@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <STYLE>A {text-decoration: none;} </STYLE>
+<style>
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: grey;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+h1 {text-align: center;}
+</style>
+<body>
+
+<h1>Appointment Form</h1>
+
+<div>
+  <form action="/action_page.css">
+    <label for="fname">First Name*</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name*</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="gender">Gender*</label>
+    <select id="gender" name="gender">
+      <option value="select">--SELECT--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="trans">Trans</option>
+    </select>
+    
+     <label for="fname">Phone number*</label>
+    <input type="text" id="fname" style="width: 120px;" name="area code" 		       placeholder="Area code">
+    
+     <input type="text" id="fname" style="width: 220px;" name="phone number" placeholder="Phone number" required><br>
+     
+     
+     <label for=date of birth">Date of Birth*</label>
+    <select id="date of birth" style="max-width:14%;" name="date of birth">
+      <option value="">DAY</option>
+      <option value="">01</option>
+      <option value="">02</option>
+      <option value="">03</option>
+      <option value="">04</option>
+      <option value="">05</option>
+      <option value="">06</option>
+      <option value="">07</option>
+      <option value="">08</option>
+      <option value="">09</option>
+      <option value="">10</option>
+      <option value="">11</option>
+      <option value="">12</option>
+      <option value="">13</option>
+      <option value="">14</option>
+      <option value="">15</option>
+      <option value="">16</option>
+      <option value="">17</option>
+      <option value="">18</option>
+      <option value="">19</option>
+      <option value="">20</option>
+      <option value="">21</option>
+      <option value="">22</option>
+      <option value="">23</option>
+      <option value="">24</option>
+      <option value="">25</option>
+      <option value="">26</option>
+      <option value="">27</option>
+      <option value="">28</option>
+      <option value="">29</option>
+      <option value="">30</option>
+      <option value="">31</option>
+      
+    </select>
+    
+    <select id="date of birth" style="max-width:18%;" name="date of birth">
+      <option value="">MONTH</option>
+      <option value="">JANUARY</option>
+      <option value="">FEBRUARY</option>
+      <option value="">MARCH</option>
+      <option value="">APRIL</option>
+      <option value="">MAY</option>
+      <option value="">JUNE</option>
+      <option value="">JULY</option>
+      <option value="">AUGUST</option>
+      <option value="">SEPTEMBER</option>
+      <option value="">OCTOBER</option>
+      <option value="">NOVEMBER</option>
+      <option value="">DECEMBER</option>
+    </select>
+    
+    
+    <input type="text" id="fname" style="width: 200px;" name="year" placeholder="YEAR eg.2002.." required><br>
+    
+    <label for="fname">Address*</label>
+    <input type="text" id="fname"style="width: 613px;" name="street address" placeholder="---------------Street Address---------------" required>
+    
+    <input type="text" id="fname"style="width: 680px;" name="street address" placeholder="--------------------Street Address line 2------------------" required>
+    
+     <input type="text" id="fname"style="width: 490px;" name="street address" placeholder="--------------------Street Address line 3------------------" required>
+     
+     <input type="text" id="fname"style="width: 180px;" name="pincode" placeholder="-Pincode-" required>
+     
+    <input type="text" id="fname"style="width: 320px;" name="city" placeholder="---------------City---------------" required>
+    <input type="text" id="fname"style="width: 320px;" name="state" placeholder="--------------------State------------------" required><br>
+    
+    <label for="fname">Email-Address</label>
+    <input type="text" id="fname" name="firstname"  style="width: 480px;" placeholder="eg...myname@example.com" required><br>
+
+   <label for="fname">Have you previously attend our facilities* : </label>
+ <input type="checkbox" id="yes" name="yes" value="Yes">
+  <label for="vehicle1"> Yes</label>
+  <input type="checkbox" id="no" name="no" value="No">
+  <label for="vehicle2"> No</label><br><br><br>
+   
+   If Yes,state on which condition and when?
+   <input type="text" id="fname"style="width: 1000px;" style="Height: 620px;" name="pincode" placeholder="-----------Write your condition here-------"><br><br><br>
+   
+
+   <label for="fname">Choose a Date for appointment : </label>
+   <input type="date" id="myDate" value="2020-12-21" required>
+   <p id="demo"></p>
+   
+   <script>
+   function myFunction() {
+     var x = document.getElementById("myDate").value;
+     document.getElementById("demo").innerHTML = x;
+   }
+   </script>
+
+<label for="appt">Select a time for appointment :</label>
+<input type="time" id="appt" name="appt">
+
+
+<button class="button" style="padding:10px 60px; margin:10px 60px; width:1350px" onclick="window.location.href = 'file:///C:/Users/Pratyush/Desktop/Login.html';">
+  Proceed to Pay</button>
+
+<button class="button" style="padding:10px 60px; margin:1px; width:1450px" onclick="window.location.href = 'file:///C:/Users/Pratyush/Desktop/website/index123.html#';" >
+  Cancel Appointment</button>
+    
+  </form>
+</div>
+
+</body>
+</html>
